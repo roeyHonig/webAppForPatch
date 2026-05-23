@@ -1,11 +1,17 @@
 {
-  "name": "ASP.NET Core 7 MVC",
-  "image": "mcr.microsoft.com/dotnet/sdk:7.0",
-  "workspaceFolder": "/workspaces/MySecondWebApp",
-  "postCreateCommand": "dotnet restore",
-  "forwardPorts": [5000, 5001],
-  "remoteUser": "vscode",
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
-  }
+  "name": "C# (.NET)",
+  "image": "://microsoft.com",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.vscode-dotnet-runtime"
+      ]
+    }
+  },
+  "forwardPorts": [5000, 5001, 8080],
+  "postCreateCommand": "dotnet restore"
 }
