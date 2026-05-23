@@ -1,6 +1,6 @@
 {
   "name": "ASP.NET MVC DevContainer",
-  "image": "mcr.microsoft.com/dotnet/sdk:7.0",
+  "image": "mcr.microsoft.com/dotnet/sdk:7.0.407",
   "features": {
     "git": "latest"
   },
