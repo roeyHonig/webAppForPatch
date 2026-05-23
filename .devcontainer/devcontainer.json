@@ -1,9 +1,10 @@
 {
-  "name": "ASP.NET MVC DevContainer",
-  "image": "mcr.microsoft.com/dotnet/sdk:7.0.407",
+  "name": "ASP.NET MVC Codespace",
+  "image": "mcr.microsoft.com/vscode/devcontainers/dotnet:0-7.0",
   "features": {
     "git": "latest"
   },
+  "forwardPorts": [5000, 5001],
   "postCreateCommand": "dotnet restore",
   "customizations": {
     "vscode": {
@@ -13,6 +14,5 @@
       ]
     }
   },
-  "forwardPorts": [5000, 5001],
   "remoteUser": "root"
 }
