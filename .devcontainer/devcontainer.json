@@ -1,9 +1,10 @@
 {
-  "name": "C# (.NET)",
-  "image": "://microsoft.com",
+  "name": "ASP.NET MVC DevContainer",
+  "image": "mcr.microsoft.com/dotnet/sdk:7.0",
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:1": {}
+    "git": "latest"
   },
+  "postCreateCommand": "dotnet restore",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,6 +13,6 @@
       ]
     }
   },
-  "forwardPorts": [5000, 5001, 8080],
-  "postCreateCommand": "dotnet restore"
+  "forwardPorts": [5000, 5001],
+  "remoteUser": "vscode"
 }
