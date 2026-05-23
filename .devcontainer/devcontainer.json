@@ -1,11 +1,11 @@
 {
-  "name": "ASP.NET Core 3.1 MVC",
-  "image": "mcr.microsoft.com/dotnet/sdk:3.1",
+  "name": "ASP.NET Core 7 MVC",
+  "image": "mcr.microsoft.com/dotnet/sdk:7.0",
   "workspaceFolder": "/workspaces/MySecondWebApp",
   "postCreateCommand": "dotnet restore",
-  "forwardPorts": [5000],
-  "remoteUser": "root",
+  "forwardPorts": [5000, 5001],
+  "remoteUser": "vscode",
   "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+    "terminal.integrated.defaultProfile.linux": "bash"
   }
 }
